@@ -1,0 +1,29 @@
+"setmyflag/" folder is created
+
+"setmyflag/setmyflag.c" is created
+
+"setmyflag/Makefile" is created
+
+added setmyflag folder to Makefile
+	Makefile  -  line: 540
+
+added new systemcall to the system call table
+	arch/x86/syscalls/syscall_32.tbl  -  line: 364
+
+added function prototype to the system calls header file
+	include/linux/syscalls.h  -  line: 852
+
+initial value of the flag is set to zero in init_task file
+	include/linux/init_task.h  -  line: 227
+
+added myFlag variable to task_struct
+	include/linux/sched.h  -  line: 1466
+
+myFlag condition is added to the process listing loop
+	fs/proc/base.c  -  line: 2952
+
+myFlag and process priority tested and fork is disabled
+	kernel/fork.c  -  line: 1648-1654
+
+myFlag and process priority tested and child termination is handled
+	kernel/exit.c  -  line: 709-716
